@@ -1,9 +1,23 @@
 //  Colors
-$accent-color: #FF6B09;
+$accent-color: #ff6b09;
 $main-text-accent-color: #111518;
-$secondary-text-color: #B9B9B9;
-$supplement-text-color: #3D3D3D;
-$main-white-color: #FFFFFF;
-$supplement-bg-color: #F1F1F1;
+$secondary-text-color: #b9b9b9;
+$supplement-text-color: #3d3d3d;
+$main-white-color: #ffffff;
+$supplement-bg-color: #f1f1f1;
 
+$card-colum: 1;
+$card-item: 1;
+$gap-left: 0;
+$gap-top: 30px;
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  row-gap: $gap-left;
+  column-gap: $gap-top;
+  flex-basis: calc((100% - (#{$card-column}) * (#{$gap-left})) / (#{$card-item}));
+}
