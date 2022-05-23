@@ -10,14 +10,3 @@ $card-colum: 1;
 $card-item: 1;
 $gap-left: 0;
 $gap-top: 30px;
-
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card-item {
-  row-gap: $gap-left;
-  column-gap: $gap-top;
-  flex-basis: calc((100% - (#{$card-column}) * (#{$gap-left})) / (#{$card-item}));
-}
