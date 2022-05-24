@@ -1,0 +1,75 @@
+.header {
+  &__section {
+  }
+  &__logo {
+  }
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  background-color: rgba(17, 21, 24, 0.9);
+
+  transform: opacity $transition;
+
+  /*  mobilka */
+  padding: 30px 20px 20px 20px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+
+    color: $main-white-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    @include button(260px, 48px, $accent-color, transparent);
+    margin: 0 auto;
+    padding: 14px 0;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+.icon {
+  display: block;
+}
+
+.navigation__menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
