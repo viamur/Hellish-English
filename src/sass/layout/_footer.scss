@@ -1,13 +1,9 @@
 .footer__top {
-  @include mob-only {
+  @include mq(mob) {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 32px;
   }
-
-  //   @media screen and (min-width: 768px) {
-  //     display: flex;
-  //   }
 
   @include mq(tab) {
     display: flex;
@@ -22,14 +18,14 @@
 }
 
 .logo__icon {
-  @include mob-only {
+  @include mq(mob) {
     margin-bottom: 20px;
   }
 
-  @include tab-only {
+  @include mq(tab) {
     margin-right: auto;
   }
-  @include desk-only {
+  @include mq(desk) {
     margin-right: 290px;
   }
 }
@@ -43,37 +39,34 @@
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.08em;
-  color: var($main-text-acent-color);
+  color: $main-text-accent-color;
 
-  @include mob-only {
+  @include mq(mob) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
+    font-size: 20px;
+    line-height: 1.2;
     margin-right: 48px;
+  }
 
-    @include tab-only {
-      font-size: 20px;
-      line-height: 1.2;
-    }
-
-    @include desk-only {
-      font-size: 30px;
-      line-height: 1.23;
-    }
+  @include mq(desk) {
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
 .footer__icon {
   margin-right: 10px;
 
-  @include tab-only {
+  @include mq(tab) {
     margin-right: 20px;
     width: 24px;
     height: 24px;
   }
 
-  @include desk-only {
+  @include mq(desk) {
     margin-right: 30px;
     width: 30px;
     height: 30px;
@@ -85,18 +78,17 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url(../images/icons/insta.svg);
+  background-image: url(../images/footer/instagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     &::before {
-      @include pseudo;
       top: 0;
       left: -24px;
       width: 1px;
       height: 40px;
-      background-color: var($secondary-text-color);
+      background-color: $secondary-text-color;
     }
   }
 }
@@ -104,16 +96,16 @@
 .footer__bottom {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var($main-text-accent-color);
+  background-color: $main-text-accent-color;
 }
 
 .footer__copyright {
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
-  color: var($secondary-text-color);
+  color: $secondary-text-color;
 
-  @include mob-only {
+  @include mq(mob) {
     text-align: center;
   }
 }
