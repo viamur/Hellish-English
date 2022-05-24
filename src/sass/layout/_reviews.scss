@@ -1,0 +1,513 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews__wrap {
+  position: relative;
+}
+
+<<<<<<< Updated upstream
+.container {
+  overflow: hidden;
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 50px;
+=======
+.reviews .container {
+  overflow: hidden;
+}
+
+.reviews .title {
+  text-align: center;
+  margin-bottom: 40px;
+>>>>>>> Stashed changes
+}
+
+.reviews__list {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.reviews__name {
+  margin-bottom: 10px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+<<<<<<< Updated upstream
+  color: $accent-color;
+=======
+  color: $secondary-text-color;
+>>>>>>> Stashed changes
+}
+
+.reviews__course {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  letter-spacing: 0.08em;
+<<<<<<< Updated upstream
+  color: $secondary-text-color;
+=======
+  color: $main-text-accent-color;
+>>>>>>> Stashed changes
+}
+
+.reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+<<<<<<< Updated upstream
+  color: $supplement-text-color;
+=======
+  color: $secondary-text-color;
+>>>>>>> Stashed changes
+}
+
+.reviews__more {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.reviews__social {
+  display: block;
+<<<<<<< Updated upstream
+  width: 34px;
+  height: 34px;
+=======
+  width: 30px;
+  height: 17px;
+>>>>>>> Stashed changes
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+<<<<<<< Updated upstream
+/* .feedback-arrow {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+} */
+
+/* .arrow-left {
+  position: absolute;
+}
+ */
+/* .arrow-right {
+  position: absolute;
+} */
+
+/* .feedback-icon {
+  display: block;
+  width: 25px;
+  height: 15px;
+} */
+
+/* .feedback-slider-dote {
+  display: flex;
+  justify-content: center;
+} */
+=======
+.feedback-arrow {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.arrow-left {
+  position: absolute;
+}
+
+.arrow-right {
+  position: absolute;
+}
+
+.feedback-icon {
+  display: block;
+  width: 25px;
+  height: 15px;
+}
+
+.feedback-slider-dote {
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> Stashed changes
+
+.slider {
+  position: relative;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  position: absolute;
+  // top: 40%;
+  font-size: 0;
+  width: 27px;
+  height: 16px;
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+}
+/* Стрелка влево */
+<<<<<<< Updated upstream
+.slick-btn-prev {
+=======
+.slick-arrow.slick-prev {
+>>>>>>> Stashed changes
+  left: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M26 7C26.5523 7 27 7.44772 27 8C27 8.55228 26.5523 9 26 9V7ZM0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM26 9H1V7H26V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
+}
+/* Стрелка вправо */
+<<<<<<< Updated upstream
+.slick-arrow.slick-btn-next {
+  right: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
+}
+reviews__click {
+  display: flex;
+  justify-content: center;
+}
+.reviews__frame {
+  /* display: flex;
+  justify-content: center; */
+  column-gap: 30px;
+}
+
+/* Элемент точки */
+.reviews__frame .reviews__img {
+=======
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+/* Элемент точки */
+.slick-dots li button {
+>>>>>>> Stashed changes
+  & {
+    display: block;
+    width: 54px;
+    height: 54px;
+
+<<<<<<< Updated upstream
+    border-radius: 50%;
+  }
+}
+/* .reviews__frame .reviews__img:nth-child(1) button {
+  background-image: url(../images/reviews/reviews-person1.jpg);
+=======
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    background-size: contain;
+  }
+}
+.slick-dots li:nth-child(1) button {
+  background-image: url(../images/feedback/feedback-person1.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person1@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(2) button {
+  background-image: url(../images/reviews/reviews-person2.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person1@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(2) button {
+  background-image: url(../images/feedback/feedback-person2.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person2@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(3) button {
+  background-image: url(../images/reviews/reviews-person3.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person2@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(3) button {
+  background-image: url(../images/feedback/feedback-person3.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person3@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(4) button {
+  background-image: url(../images/reviews/reviews-person4.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person3@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(4) button {
+  background-image: url(../images/feedback/feedback-person4.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person4@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(5) button {
+  background-image: url(../images/reviews/reviews-person5.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person4@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(5) button {
+  background-image: url(../images/feedback/feedback-person5.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person5@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(6) button {
+  background-image: url(../images/reviews/reviews-person6.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person5@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(6) button {
+  background-image: url(../images/feedback/feedback-person6.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person6@2x.jpg);
+  }
+}
+.reviews__frame .reviews__img:nth-child(7) button {
+  background-image: url(../images/reviews/reviews-person7.jpg);
+=======
+    background-image: url(../images/feedback/feedback-person6@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(7) button {
+  background-image: url(../images/feedback/feedback-person7.jpg);
+>>>>>>> Stashed changes
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
+    background-image: url(../images/reviews/reviews-person7@2x.jpg);
+  }
+} */
+=======
+    background-image: url(../images/feedback/feedback-person7@2x.jpg);
+  }
+}
+>>>>>>> Stashed changes
+
+@include mq(mob-only) {
+  .reviews__avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__name {
+    text-align: center;
+  }
+
+  .reviews__course {
+    max-width: 240px;
+    margin: 0 auto 10px;
+
+    text-align: center;
+  }
+
+  .reviews__text {
+    max-width: 240px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .slick-arrow.slick-prev {
+    bottom: 27px;
+    left: 0;
+    transform: translate(0, 50%);
+  }
+
+  .slick-arrow.slick-next {
+    bottom: 27px;
+    right: 0;
+    transform: translate(0, 50%);
+  }
+
+<<<<<<< Updated upstream
+  .reviews__frame .reviews__img:nth-child(n + 4) {
+    display: none;
+  }
+  .reviews__frame .reviews__img:not(:first-child) {
+=======
+  .slick-dots li:nth-child(n + 4) {
+    display: none;
+  }
+  .slick-dots li:not(:first-child) {
+>>>>>>> Stashed changes
+    margin-left: 10px;
+  }
+  .slick-list {
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__item {
+    display: flex;
+  }
+
+  .reviews__avatar {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__course {
+    margin-bottom: 20px;
+  }
+
+  .slick-arrow.slick-prev {
+    top: 40%;
+    left: 0;
+  }
+
+  .slick-arrow.slick-next {
+    top: 40%;
+    right: 0;
+  }
+}
+
+@include mq(tab-only) {
+  .reviews .reviews__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .reviews__list {
+    padding: 40px;
+  }
+
+  .reviews__left {
+    margin-right: 46px;
+  }
+
+  .reviews__name {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .slick-arrow.slick-prev {
+    transform: translateX(-50%);
+  }
+
+  .slick-arrow.slick-next {
+    transform: translateX(50%);
+  }
+  .slick-list {
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+  }
+<<<<<<< Updated upstream
+=======
+  .slick-slide {
+  }
+>>>>>>> Stashed changes
+}
+
+@include mq(desk) {
+  .reviews {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .reviews .reviews__title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__list {
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    max-width: 1090px;
+    margin: 0 auto 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 115px;
+  }
+
+  .reviews__left {
+    margin-right: 40px;
+  }
+
+  .reviews__name {
+    font-size: 30px;
+  }
+
+  .reviews__course {
+    max-width: 430px;
+    font-size: 14px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.slick-slide {
+  outline: none;
+}
