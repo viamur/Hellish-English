@@ -47,6 +47,15 @@
   }
 }
 
+.about__paragraph::before {
+  content: '';
+  width: 18px;
+  height: 14px;
+  background-size: contain;
+  margin-right: 9px;
+  background-image: url();
+}
+
 .about__link {
   font-weight: 500;
   font-size: 12px;
