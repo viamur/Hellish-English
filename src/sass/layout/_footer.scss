@@ -5,16 +5,17 @@
     padding-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+  //   @media screen and (min-width: 768px) {
+  //     display: flex;
+  //   }
 
-  @include tab-only {
+  @include mq(tab) {
+    display: flex;
     padding-top: 50px;
     padding-bottom: 40px;
   }
 
-  @include desk-only {
+  @include mq(desk) {
     padding-top: 52px;
     padding-bottom: 53px;
   }
@@ -25,7 +26,7 @@
     margin-bottom: 20px;
   }
 
-  @include tablet-only {
+  @include tab-only {
     margin-right: auto;
   }
   @include desk-only {
