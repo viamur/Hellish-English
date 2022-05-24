@@ -7,8 +7,11 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   @include mq(tab) {
-    background-size: cover;
     background-image: url(../images/hero/desk/desk-wave.svg);
+    background-position: center -330px;
+  }
+  @include mq(desk) {
     background-position: center 64px;
+    background-size: contain;
   }
 }

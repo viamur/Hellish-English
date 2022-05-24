@@ -5,8 +5,9 @@ $secondary-text-color: #b9b9b9;
 $supplement-text-color: #3d3d3d;
 $main-white-color: #ffffff;
 $supplement-bg-color: #f1f1f1;
-
-$card-colum: 1;
-$card-item: 1;
-$gap-left: 0;
-$gap-top: 30px;
+:root {
+  --card-colum: 1;
+  --card-item: 1;
+  --gap-left: 1px;
+  --gap-top: 30px;
+}
