@@ -21,6 +21,8 @@
   &__button {
     @include button(336px, 70px, $accent-color, transparent);
     @include mq(tab-only) {
+      margin-right: 40px;
+      margin-left: auto;
       @include button(260px, 48px, $accent-color, transparent);
     }
     @include mq(mob-only) {
@@ -42,6 +44,8 @@
 
 .navigation {
   display: none;
+  margin-right: 65px;
+  margin-left: auto;
   @include mq(desk) {
     display: block;
   }
@@ -51,7 +55,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 40px;
+      margin-right: 60px;
     }
   }
 
@@ -62,13 +66,6 @@
     text-transform: uppercase;
     color: $secondary-text-color;
     transition: color $transition;
-
-    &:nth-child(odd) {
-      padding: 4px 20px 3px 20px;
-    }
-    &:nth-child(even) {
-      padding: 4px 4px 3px 4px;
-    }
 
     &:hover,
     &:focus {
