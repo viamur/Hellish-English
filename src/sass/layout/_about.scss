@@ -7,15 +7,15 @@
 }
 
 .about__subtitle {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $secondary-text-color;
+  margin-bottom: 20px;
+}
+
+.about__name {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.2;
-}
-
-.about__profile {
-  padding-bottom: 16px;
-  border-bottom: 1px solid $secondary-text-color;
-  margin-bottom: 20px;
 }
 
 .about__list {
@@ -45,6 +45,15 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+}
+
+.about__paragraph::before {
+  content: '';
+  width: 18px;
+  height: 14px;
+  background-size: contain;
+  margin-right: 9px;
+  background-image: url();
 }
 
 .about__link {
