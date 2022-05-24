@@ -8,8 +8,7 @@
   margin: 0 auto;
 
   @include mq(mob) {
-    width: 320px;
-    padding: 0 20px;
+    width: 480px;
   }
 
   @include mq(tab) {
