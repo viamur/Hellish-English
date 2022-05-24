@@ -9,14 +9,14 @@ $('.slider-for').slick({
   // appendArrows,
 });
 $('.slider-nav').slick({
-  slidesToShow: 6,
+  slidesToShow: 7,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   dots: false,
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
-  centerPadding: '0px',
+  centerPadding: '350px',
   infinite: true,
   variableWidth: false,
 });
