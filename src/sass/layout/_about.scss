@@ -23,6 +23,7 @@
 }
 
 .about__item {
+  display: inline-flex;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -32,6 +33,18 @@
     margin-bottom: 20px;
   }
 }
+
+.about__item::before {
+  content: '';
+  min-width: 18px;
+  height: 14px;
+  background-size: contain;
+  margin-right: 9px;
+  background-image: url(../images/about/svg/about_checkbox.svg);
+
+  // outline: 1px solid black;
+}
+
 .about__text {
   margin-bottom: 15px;
 }
@@ -41,19 +54,11 @@
   font-size: 12px;
   line-height: 1.6;
   color: $secondary-text-color;
+  text-decoration: none;
 
   &:not(:last-child) {
     margin-bottom: 15px;
   }
-}
-
-.about__paragraph::before {
-  content: '';
-  width: 18px;
-  height: 14px;
-  background-size: contain;
-  margin-right: 9px;
-  background-image: url();
 }
 
 .about__link {
