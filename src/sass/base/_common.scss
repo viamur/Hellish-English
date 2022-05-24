@@ -3,4 +3,12 @@ body {
   background-color: $main-white-color;
   color: $main-text-accent-color;
   letter-spacing: 0.08em;
+  background-image: url(../images/hero/tab/tab-wave.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  @include mq(tab) {
+    background-size: cover;
+    background-image: url(../images/hero/desk/desk-wave.svg);
+    background-position: center 64px;
+  }
 }
