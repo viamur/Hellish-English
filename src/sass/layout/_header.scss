@@ -18,6 +18,22 @@
       height: 30px;
     }
   }
+  &__button {
+    @include button(336px, 70px, $accent-color, transparent);
+    @include mq(tab-only) {
+      @include button(260px, 48px, $accent-color, transparent);
+    }
+    @include mq(mob-only) {
+      display: none;
+    }
+    transition: background-color $transition, color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $main-white-color;
+    }
+  }
 }
 
 .logo__img {
@@ -40,6 +56,9 @@
   }
 
   &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
     text-transform: uppercase;
     color: $secondary-text-color;
     transition: color $transition;
@@ -54,16 +73,6 @@
     &:hover,
     &:focus {
       color: $accent-color;
-    }
-  }
-
-  &__button {
-    @include button(336px, 70px, $accent-color, transparent);
-    @include mq(tab-only) {
-      @include button(260px, 48px, $accent-color, transparent);
-    }
-    @include mq(mob-only) {
-      display: none;
     }
   }
 }
