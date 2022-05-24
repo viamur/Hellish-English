@@ -1,0 +1,118 @@
+.footer__top {
+  @include mob-only {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @include tab-only {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  @include desk-only {
+    padding-top: 52px;
+    padding-bottom: 53px;
+  }
+}
+
+.logo__icon {
+  @include mob-only {
+    margin-bottom: 20px;
+  }
+
+  @include tablet-only {
+    margin-right: auto;
+  }
+  @include desk-only {
+    margin-right: 183px;
+  }
+}
+
+.footer-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var($main-text-acent-color);
+
+  @include mob-only {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 48px;
+
+    @include tab-only {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    @include desk-only {
+      font-size: 30px;
+      line-height: 1.23;
+    }
+  }
+}
+
+.footer__icon {
+  margin-right: 10px;
+
+  @include tab-only {
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @include desk-only {
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer__link {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icons/insta.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      @include pseudo;
+      top: 0;
+      left: -24px;
+      width: 1px;
+      height: 40px;
+      background-color: var($secondary-text-color);
+    }
+  }
+}
+
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var($main-text-accent-color);
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: var($secondary-text-color);
+
+  @include mob-only {
+    text-align: center;
+  }
+}
