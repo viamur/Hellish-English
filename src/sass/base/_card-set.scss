@@ -6,5 +6,5 @@
 .card-item {
   row-gap: $gap-left;
   column-gap: $gap-top;
-  flex-basis: calc((100% - (#{$card-column}) * (#{$gap-left})) / (#{$card-item}));
+  flex-basis: calc((100% - (#{$card-colum}) * (#{$gap-left})) / (#{$card-item}));
 }
