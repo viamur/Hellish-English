@@ -1,0 +1,125 @@
+.hero {
+  padding-top: 90px;
+  @include mq(tab) {
+    padding-top: 158px;
+  }
+  @include mq(desk) {
+    padding-top: 130px;
+  }
+  &__wraper {
+    @include mq(tab) {
+      display: flex;
+    }
+    @include mq(desk) {
+      width: 1422px;
+    }
+  }
+
+  &__inner {
+    width: 320px;
+    margin-bottom: 50px;
+    @include mq(tab) {
+      margin-bottom: 45px;
+      padding-left: 2px;
+    }
+    @include mq(desk) {
+      width: 530px;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+    @include mq(tab) {
+      margin-bottom: 15px;
+    }
+    @include mq(desk) {
+      font-size: 58px;
+    }
+  }
+  &__box {
+    margin-bottom: 54px;
+    @include mq(tab) {
+      margin-bottom: 0;
+      margin-right: 18px;
+    }
+    @include mq(desk) {
+      margin-right: 50px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    @include mq(desk) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &--grey {
+      font-weight: 500;
+      color: $secondary-text-color;
+    }
+
+    &--nowrap {
+      color: $main-text-accent-color;
+
+      white-space: nowrap;
+    }
+
+    &--accent {
+      color: $accent-color;
+
+      white-space: nowrap;
+      @include mq(desk) {
+        white-space: wrap;
+        color: $main-text-accent-color;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 260px;
+    height: 48px;
+    padding: 10px;
+    margin: 0 auto;
+
+    color: $main-white-color;
+    background-color: $accent-color;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    outline-color: transparent;
+
+    transition: all 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+    @include mq(tab) {
+      margin: 0;
+    }
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.14em;
+
+      width: 354px;
+      height: 70px;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    @include mq(tab) {
+      margin: 0;
+    }
+  }
+}
