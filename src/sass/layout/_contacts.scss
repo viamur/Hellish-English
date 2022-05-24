@@ -1,0 +1,143 @@
+.contacts {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+
+  background-image: url('/images/contacts/mob/mob-image-1x.png');
+  background-color: #111518;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mq(retina) {
+    background-image: url('/images/contacts/mob/mob-image-2x.png');
+  }
+
+  & .accent-color {
+    color: $accent-color;
+  }
+  @include mq(tab) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 68px;
+    text-align: center;
+
+    background-image: url('/images/contacts/tab/tab-image-1x.png');
+
+    @include mq(retina) {
+      background-image: url('/images/contacts/tab/tab-image-2x.png');
+    }
+  }
+
+  @include mq(desk) {
+    max-width: 1680px;
+    margin-bottom: 62px;
+    margin-top: 100px;
+    background-image: url('/images/contacts/desk/desk-image-1x.png');
+
+    @include mq(retina) {
+      background-image: url('/images/contacts/desk/desk-image-2x.png');
+    }
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: $main-white-color;
+    margin-bottom: 25px;
+
+    @include mq(tab) {
+      font-size: 26px;
+      line-height: 1.3;
+    }
+
+    @include mq(desk) {
+      font-size: 46px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    margin-bottom: 43px;
+    color: $main-white-color;
+
+    @include mq(tab) {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    @include mq(desk) {
+      font-size: 30px;
+      line-height: 1.23;
+      margin-bottom: 56px;
+    }
+  }
+
+  &__form {
+    @include mq(tab) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+    padding-left: 18px;
+    width: 280px;
+    height: 48px;
+    color: $main-white-color;
+    background-color: transparent;
+    border: 2px solid $main-white-color;
+    outline: none;
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+    }
+    &::placeholder {
+      color: $main-white-color;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.08em;
+    }
+
+    @include mq(tab) {
+      width: 390px;
+      padding-left: 28px;
+    }
+
+    @include mq(desk) {
+      width: 478px;
+      height: 70px;
+      padding-left: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form-button {
+    @include button(260px, 48px, var(--main-white-color), var(--accent-color));
+    display: inline;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    margin-top: 30px;
+
+    @include mq(tab) {
+      width: 354px;
+      height: 70px;
+      margin-top: 10px;
+    }
+
+    @include mq(desk) {
+      margin-top: 50px;
+    }
+  }
+}
