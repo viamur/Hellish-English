@@ -1,7 +1,77 @@
 .header {
   &__section {
+    padding: 30px 0;
+    @include mq(tab-only) {
+      padding: 40px 0;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   &__logo {
+    width: 128px;
+    height: 45px;
+    @include mq(mob-only) {
+      width: 80px;
+      height: 30px;
+    }
+  }
+}
+
+.logo__img {
+  display: block;
+}
+
+.navigation {
+  display: none;
+  @include mq(desk) {
+    display: block;
+  }
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    transition: color $transition;
+
+    &:nth-child(odd) {
+      padding: 4px 20px 3px 20px;
+    }
+    &:nth-child(even) {
+      padding: 4px 4px 3px 4px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    @include button(336px, 70px, $accent-color, transparent);
+    @include mq(tab-only) {
+      @include button(260px, 48px, $accent-color, transparent);
+    }
+    @include mq(mob-only) {
+      display: none;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+  @include mq(no-desk) {
+    display: block;
   }
 }
 
