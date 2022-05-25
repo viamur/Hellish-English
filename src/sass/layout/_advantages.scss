@@ -1,0 +1,118 @@
+.advantages {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  @include mq(tab) {
+    margin-top: 70px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 220px;
+    }
+
+    @include mq(tab) {
+      max-width: 216px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      &:nth-child(n + 2) {
+        max-width: 186px;
+      }
+    }
+
+    @include mq(desk) {
+      max-width: 366px;
+      &:nth-child(n + 2) {
+        max-width: 366px;
+      }
+    }
+  }
+
+  &__list {
+    @include mq(tab) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    padding-left: 68px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    display: flex;
+    letter-spacing: 0.08em;
+
+    @include mq(desk) {
+      font-size: 20px;
+      position: relative;
+      max-width: 366px;
+      margin-left: -15px;
+      padding-left: 104px;
+    }
+  }
+
+  &__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   width: 4px;
+  //   height: 65%;
+  //   background-color: var(--white);
+  //   right: -3px;
+  // }
+}
+
+.image1-icon::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('/images/advantages/icon-tab-mob-image1.svg');
+  background-size: cover;
+
+  @include mq(desk) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.image2-icon::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('/images/advantages/icon-tab-mob-image2.svg');
+  background-size: cover;
+
+  @include mq(desk) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.image3-icon::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('/images/advantages/icon-tab-mob-image3.svg');
+  background-size: cover;
+
+  @include mq(desk) {
+    width: 100px;
+    height: 100px;
+  }
+}
