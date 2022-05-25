@@ -41,11 +41,11 @@
   letter-spacing: 0.08em;
   color: $main-text-accent-color;
   animation-duration: 1250ms;
-  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: color 250ms var(--timing-function), transform 250ms var(--timing-function);
 
   &:hover,
   &:focus {
-    color: rgb(255, 107, 9);
+    color: var(--accent-color);
     transform: scale(1.1);
   }
 
