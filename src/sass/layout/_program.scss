@@ -3,7 +3,7 @@
   padding-bottom: 70px;
   background-color: $main-text-accent-color;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @include mq(tab) {
     padding-top: 60px;
     padding-bottom: 137px;
