@@ -2,8 +2,11 @@
   padding-top: 50px;
   padding-bottom: 70px;
   background-color: $main-text-accent-color;
-  position: relative;
+  // position: relative;
   // overflow: hidden;
+  @include mq(mob) {
+    position: relative;
+  }
   @include mq(tab) {
     padding-top: 60px;
     padding-bottom: 137px;
@@ -26,37 +29,7 @@
       background-color: $main-white-color;
     }
   }
-  &::after {
-    content: '';
-    display: block;
-    height: 137px;
-    width: 120px;
-    position: absolute;
-    bottom: 0;
-    right: -30px;
-    background-image: url(../images/program/desk/desk-image-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-    @include mq(retina) {
-      background-image: url(../images/program/desk/desk-image-2x.jpg);
-    }
-    @include mq(mob) {
-      width: 175px;
-      right: 0;
-      background-position: center;
-    }
-    @include mq(tab) {
-      height: 273px;
-      width: 374px;
-    }
-    @include mq(desk) {
-      height: 502px;
-      width: 672px;
-      bottom: -172px;
-      left: -129px;
-    }
-  }
+
   &__title {
     color: $main-white-color;
     text-align: center;
@@ -80,6 +53,10 @@
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    @include mq(mob) {
+      position: static;
+    }
     @include mq(tab) {
       width: 100%;
       padding-left: 40px;
@@ -88,6 +65,61 @@
     @include mq(desk) {
       display: flex;
       padding-left: 0;
+      position: relative;
+    }
+    @media screen and (min-width: 1641px) {
+      position: static;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 137px;
+
+      position: absolute;
+      bottom: -92px;
+      right: -56px;
+
+      background-image: url(../images/program/mob/mob-image-1x.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      // opacity: 0.5;
+      @include mq(retina) {
+        background-image: url(../images/program/mob/mob-image-2x.jpg);
+      }
+      @include mq(mob) {
+        width: 175px;
+        bottom: -24px;
+        right: 0;
+        background-image: url(../images/program/tab/tab-image-1x.jpg);
+
+        @include mq(retina) {
+          background-image: url(../images/program/tab/tab-image-2x.jpg);
+        }
+      }
+      @include mq(tab) {
+        height: 273px;
+        width: 374px;
+        bottom: 56px;
+      }
+      @include mq(desk) {
+        height: 502px;
+        width: 672px;
+
+        bottom: -377px;
+        left: -164px;
+
+        background-image: url(../images/program/desk/desk-image-1x.jpg);
+        @include mq(retina) {
+          background-image: url(../images/program/desk/desk-image-2x.jpg);
+        }
+      }
+      @media screen and (min-width: 1641px) {
+        bottom: -201px;
+        left: 0;
+      }
     }
   }
   &__wrap {
@@ -135,9 +167,11 @@
     margin-bottom: 8px;
     @include mq(tab) {
       margin-bottom: 0;
+      margin-right: 50px;
     }
     @include mq(desk) {
       margin-bottom: 25px;
+      margin-right: 0;
     }
   }
 }
