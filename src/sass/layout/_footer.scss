@@ -1,9 +1,7 @@
 .footer__top {
-  // @include mq(mob) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // text-align: center;
   padding-top: 24px;
   padding-bottom: 30px;
 
@@ -15,8 +13,8 @@
   }
 
   @include mq(desk) {
-    padding-top: 5px;
-    padding-bottom: 30px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 }
 .footer__logo {
@@ -79,30 +77,24 @@
 }
 
 .footer__link {
-  // position: relative;
-  // display: inline-block;
-  // width: 40px;
-  // height: 40px;
-  // margin-right: auto;
-  width: 100%;
-  height: 100%;
-  // background-image: url(../images/footer/instagram.svg);
-  // background-repeat: no-repeat;
-  // background-position: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
 
   @include mq(tab) {
     &::before {
       content: '';
+      position: absolute;
       display: block;
-      // border: 1px solid #ff6b09;
       width: 1px;
       height: 40px;
-      background-color: #ff6b09;
-      margin-right: 25px;
-      // top: 0;
-      // left: -24px;
-      // width: 1px;
-      // height: 40px;
+      background-color: $secondary-text-color;
+      left: -20px;
+    }
+  }
+  @include mq(desk) {
+    &::before {
+      left: -25px;
     }
   }
 }
