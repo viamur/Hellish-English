@@ -5,6 +5,7 @@
   }
   @include mq(desk) {
     padding-top: 130px;
+    overflow: hidden;
   }
   &__wraper {
     @include mq(tab) {
