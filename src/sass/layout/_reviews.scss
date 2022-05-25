@@ -7,7 +7,8 @@
   position: relative;
 }
 
-.container {
+.reviews__container {
+  position: relative;
   overflow: hidden;
 }
 
@@ -94,15 +95,23 @@
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+  margin: 0;
 }
 /* Лента слайдов */
 .slick-track {
   display: flex;
 }
-
-.slick-arrow {
+.slick-prev-js {
   position: absolute;
-  // top: 40%;
+  top: 50%;
+  right: 10;
+}
+.slick-next-js {
+  position: absolute;
+  top: 50%;
+  right: 10;
+}
+.slick-arrow {
   font-size: 0;
   width: 27px;
   height: 16px;
@@ -123,11 +132,26 @@
 .reviews__click {
   display: flex;
   justify-content: center;
+  width: 182px;
+  margin: 0 auto;
+
+  @include mq(tab) {
+    width: 558px;
+  }
 }
 
 .reviews__frame {
-  display: flex;
-  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &.slick-current {
+    picture {
+      display: inline-block;
+      outline: 1px solid $accent-color;
+      border-radius: 50%;
+    }
+  }
 }
 
 /* Элемент точки */
@@ -140,69 +164,6 @@
     border-radius: 50%;
   }
 }
-/* .reviews__frame .reviews__img:nth-child(1) button {
-  background-image: url(../images/reviews/reviews-person1.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person1@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(2) button {
-  background-image: url(../images/reviews/reviews-person2.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person2@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(3) button {
-  background-image: url(../images/reviews/reviews-person3.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person3@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(4) button {
-  background-image: url(../images/reviews/reviews-person4.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person4@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(5) button {
-  background-image: url(../images/reviews/reviews-person5.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person5@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(6) button {
-  background-image: url(../images/reviews/reviews-person6.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person6@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(7) button {
-  background-image: url(../images/reviews/reviews-person7.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person7@2x.jpg);
-  }
-} */
 
 @include mq(mob-only) {
   .reviews__avatar {
@@ -250,7 +211,6 @@
   }
   .slick-list {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    margin-bottom: 30px;
   }
 }
 

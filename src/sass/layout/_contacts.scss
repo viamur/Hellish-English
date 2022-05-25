@@ -21,7 +21,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    margin-bottom: 68px;
     text-align: center;
 
     background-image: url('/images/contacts/tab/tab-image-1x.png');
@@ -33,7 +32,6 @@
 
   @include mq(desk) {
     max-width: 1680px;
-    margin-bottom: 62px;
     margin-top: 100px;
     background-image: url('/images/contacts/desk/desk-image-1x.png');
 
@@ -56,7 +54,8 @@
 
     @include mq(desk) {
       font-size: 46px;
-      margin-bottom: 50px;
+      margin: 0 auto 50px;
+      max-width: 980px;
     }
   }
 
@@ -129,6 +128,15 @@
     line-height: 1.25;
     letter-spacing: 0.08em;
     margin-top: 30px;
+    transition: var(--timing-function), box-shadow var(--timing-function);
+    transition-duration: 250ms;
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $main-white-color;
+      color: $accent-color;
+      box-shadow: 3px 2px 9px 3px var(--accent-color);
+    }
 
     @include mq(tab) {
       width: 354px;
