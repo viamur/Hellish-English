@@ -6,9 +6,15 @@
     margin-top: 70px;
   }
 
+  @include mq(desk) {
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+
   &__list-item {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -16,6 +22,7 @@
 
     @media screen and (max-width: 768px) {
       width: 220px;
+      height: 69px;
     }
 
     @include mq(tab) {
