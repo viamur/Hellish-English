@@ -1,67 +1,77 @@
 .footer__top {
-  @include mq(mob) {
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 32px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 30px;
 
   @include mq(tab) {
     display: flex;
+    flex-direction: row;
     padding-top: 50px;
     padding-bottom: 40px;
   }
 
   @include mq(desk) {
     padding-top: 52px;
-    padding-bottom: 53px;
+    padding-bottom: 52px;
   }
 }
-
-.logo__icon {
-  @include mq(mob) {
-    margin-bottom: 20px;
-  }
-
-  @include mq(tab) {
-    margin-right: auto;
-  }
+.footer__logo {
   @include mq(desk) {
     margin-right: 290px;
+  }
+}
+.logo__icon {
+  display: block;
+  margin-bottom: 22px;
+
+  @include mq(tab) {
+    margin-bottom: 0;
   }
 }
 
 .footer-tel {
   display: flex;
   align-items: center;
-  //   justify-content: center;
-
+  margin-bottom: 30px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: $main-text-accent-color;
+  animation-duration: 1250ms;
+  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
 
-  @include mq(mob) {
-    margin-bottom: 30px;
+  &:hover,
+  &:focus {
+    color: rgb(255, 107, 9);
+    transform: scale(1.1);
   }
 
   @include mq(tab) {
     font-size: 20px;
     line-height: 1.2;
-    margin-right: 48px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: auto;
   }
 
   @include mq(desk) {
+    margin-right: 56px;
+    margin-left: 0;
     font-size: 30px;
     line-height: 1.23;
   }
 }
 
-.footer__icon {
-  margin-right: 10px;
+.footer__wrap {
+  display: flex;
+}
 
+.footer__icon {
   @include mq(tab) {
-    margin-right: 20px;
+    margin-right: 39px;
     width: 24px;
     height: 24px;
   }
@@ -75,20 +85,23 @@
 
 .footer__link {
   position: relative;
-  display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url(../images/footer/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @include mq(tab) {
     &::before {
-      top: 0;
-      left: -24px;
+      content: '';
+      position: absolute;
+      display: block;
       width: 1px;
       height: 40px;
       background-color: $secondary-text-color;
+      left: -20px;
+    }
+  }
+  @include mq(desk) {
+    &::before {
+      left: -25px;
     }
   }
 }
@@ -104,8 +117,7 @@
   font-size: 14px;
   line-height: 2;
   color: $secondary-text-color;
-
-  @include mq(mob) {
+  @include mq(mob-only) {
     text-align: center;
   }
 }

@@ -1,0 +1,176 @@
+.features {
+  @include mq(mob) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(tab) {
+    padding-bottom: 50px;
+  }
+
+  @include mq(desk) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mq(tab) {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    @include mq(desk) {
+      text-align: left;
+      font-size: 46px;
+      margin-bottom: 47px;
+    }
+  }
+
+  &__list {
+    flex-direction: column;
+    --card-colum: 0;
+    --card-item: 1;
+    --gap-left: 0;
+    --gap-top: 15px;
+
+    @include mq(tab) {
+      flex-direction: row;
+      --card-colum: 1;
+      --card-item: 2;
+      --gap-left: 20px;
+      --gap-top: 20px;
+    }
+    @include mq(desk) {
+      --card-colum: 2;
+      --card-item: 3;
+      --gap-left: 30px;
+    }
+  }
+
+  &__item {
+    background-color: $main-white-color;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    @include mq(mob-only) {
+    }
+
+    @include mq(tab) {
+    }
+
+    @include mq(desk) {
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    transition: background-color 250ms var(--timing-function);
+
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    @include mq(desk) {
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-bottom: 55px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    &:hover .features__icon,
+    &:focus .features__icon {
+      fill: $main-white-color;
+    }
+    &:hover .features__icon,
+    &:focus .features__icon {
+      fill: $main-white-color;
+    }
+
+    &:hover .features__subject,
+    &:focus .features__subject {
+      color: $main-white-color;
+    }
+    &:hover .features__subject:after,
+    &:focus .features__subject:after {
+      background-color: $main-white-color;
+    }
+    &:hover .features__subtitle,
+    &:focus .features__subtitle {
+      color: $main-white-color;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+    fill: $accent-color;
+
+    transition: fill 250ms var(--timing-function);
+    @include mq(tab) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__subject {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    color: $main-text-accent-color;
+
+    transition: color 250ms var(--timing-function);
+
+    @include mq(desk) {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    &:after {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      margin: 20px auto;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      background-color: $accent-color;
+
+      @include mq(desk) {
+        margin: 15px auto;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.08em;
+      color: $secondary-text-color;
+
+      transition: color 250ms var(--timing-function);
+
+      @include mq(tab) {
+        font-size: 18px;
+        line-height: 1.56;
+      }
+    }
+  }
+  .row-br {
+    display: block;
+  }
+}
