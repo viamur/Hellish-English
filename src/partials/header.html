@@ -28,24 +28,25 @@
 
     <button
       type="button"
-      class="menu-button menu-button--burger"
+      class="menu-button"
       aria-expanded="false"
       aria-controls="menu-container"
       data-menu-open
     >
-      <svg class="icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+      <svg class="icon" aria-label="Переключатель мобильного меню">
         <!-- Временно подключенные иконки -->
         <use class="icon-menu" href="./images/header/mob/mob-menu.svg"></use>
       </svg>
     </button>
 
     <div class="menu-container navigation__menu-container" data-menu>
-      <div class="menu-container__top">
-        <a href="./index.html" class="logo menu-container__logo"
-          ><img src="./images/sprite/logo-menu.svg" alt="logo" class="logo__img"
-        /></a>
+      <div class="box-menu">
+        <div class="menu-container__top">
+          <a href="./index.html" class="logo menu-container__logo"
+            ><img src="./images/sprite/logo-menu.svg" alt="logo" class="logo__img"
+          /></a>
 
-        <!-- <button
+          <!-- <button
           type="button"
           class="menu-button menu-button--cross"
           aria-expanded="true"
@@ -57,24 +58,25 @@
             <use class="icon-cross" href="./images/header/mob/mob-cross.svg"></use>
           </svg>
         </button> -->
+        </div>
+
+        <ul class="menu-container__list">
+          <li class="menu-container__item">
+            <a href="#program" class="menu-container__link js-scroll">Studying program</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#about" class="menu-container__link js-scroll">About</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#how-we-do" class="menu-container__link js-scroll">Training options</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#contacts" class="menu-container__link js-scroll">Contacts</a>
+          </li>
+        </ul>
+
+        <button type="button" class="button menu-container__button">Consultation by phone</button>
       </div>
-
-      <ul class="menu-container__list">
-        <li class="menu-container__item">
-          <a href="#program" class="menu-container__link js-scroll">Studying program</a>
-        </li>
-        <li class="menu-container__item">
-          <a href="#about" class="menu-container__link js-scroll">About</a>
-        </li>
-        <li class="menu-container__item">
-          <a href="#how-we-do" class="menu-container__link js-scroll">Training options</a>
-        </li>
-        <li class="menu-container__item">
-          <a href="#contacts" class="menu-container__link js-scroll">Contacts</a>
-        </li>
-      </ul>
-
-      <button type="button" class="button menu-container__button">Consultation by phone</button>
     </div>
   </div>
 </header>
