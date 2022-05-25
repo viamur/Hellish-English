@@ -1,8 +1,8 @@
 .about {
-  margin-top: 70px;
+  padding-top: 70px;
 
   @include mq(desk) {
-    margin-top: 130px;
+    padding-top: 130px;
   }
 }
 
@@ -162,9 +162,14 @@
 
   text-decoration: underline;
 
+  transition-property: color, transform;
+  transition-duration: 1250ms;
+  transition-timing-function: ease-in-out;
+
   &:hover,
   &:focus {
-    text-shadow: $accent-color;
+    transform: scale(1.1);
+    color: tomato;
   }
   @include mq(desk) {
     font-size: 18px;
