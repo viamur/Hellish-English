@@ -18,6 +18,7 @@
       height: 30px;
     }
   }
+
   &__button {
     @include button(336px, 70px, $accent-color, transparent);
     @include mq(tab-only) {
@@ -104,9 +105,14 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+  }
 
-    .logo__img {
-      fill: aliceblue;
+  &__logo {
+    width: 128px;
+    height: 45px;
+    @include mq(mob-only) {
+      width: 80px;
+      height: 30px;
     }
   }
 
