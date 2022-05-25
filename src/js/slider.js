@@ -9,41 +9,20 @@ $('.slider-for').slick({
   // appendArrows,
 });
 $('.slider-nav').slick({
-  slidesToShow: 7,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   dots: false,
-  centerMode: true,
-  focusOnSelect: true,
   arrows: false,
-  centerPadding: '105',
-  infinite: true,
-  /* variableWidth: true, */
-});
-
-/* $('.slider').slick({
-  // normal options...
+  mobileFirst: true,
   infinite: false,
-
-  // the magic
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 3,
-        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 7,
       },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 300,
-      settings: 'unslick', // destroys slick
     },
   ],
-}); */
+});

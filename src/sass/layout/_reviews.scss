@@ -7,7 +7,6 @@
   position: relative;
 }
 
-
 .reviews__container {
   overflow: hidden;
 }
@@ -95,6 +94,7 @@
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+  margin: 0;
 }
 /* Лента слайдов */
 .slick-track {
@@ -124,11 +124,23 @@
 .reviews__click {
   display: flex;
   justify-content: center;
+  width: 182px;
+  margin: 0 auto;
+
+  @include mq(tab) {
+    width: 558px;
+  }
 }
 
 .reviews__frame {
-  display: flex;
-  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &.slick-current {
+    outline: 1px solid red;
+    border-radius: 50%;
+  }
 }
 
 /* Элемент точки */
@@ -251,7 +263,6 @@
   }
   .slick-list {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    margin-bottom: 30px;
   }
 }
 
