@@ -1,6 +1,15 @@
 .reviews {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 61px;
+
+  @include mq(tab) {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  @include mq(desk) {
+    padding-bottom: 130px;
+  }
 }
 
 .reviews__wrap {
@@ -8,17 +17,35 @@
 }
 
 .reviews__container {
+  position: relative;
   overflow: hidden;
 }
 
 .reviews__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  @include mq(tab) {
+    margin-bottom: 30px;
+  }
+  @include mq(desk) {
+    margin-bottom: 50px;
+  }
 }
 
 .reviews__list {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  @include mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+  @include mq(desk) {
+    max-width: 1090px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 82px;
+    padding-right: 112px;
+  }
 }
 
 .reviews__name {
@@ -57,53 +84,35 @@
   display: block;
   width: 34px;
   height: 34px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* .feedback-arrow {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-} */
-
-/* .arrow-left {
-  position: absolute;
-}
- */
-/* .arrow-right {
-  position: absolute;
-} */
-
-/* .feedback-icon {
-  display: block;
-  width: 25px;
-  height: 15px;
-} */
-
-/* .feedback-slider-dote {
-  display: flex;
-  justify-content: center;
-} */
 
 .slider {
   position: relative;
 }
 
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
   margin: 0;
 }
-/* Лента слайдов */
+
 .slick-track {
   display: flex;
 }
-
-.slick-arrow {
+.slick-prev-js {
   position: absolute;
-  // top: 40%;
+  top: 50%;
+  right: 10;
+}
+.slick-next-js {
+  position: absolute;
+  top: 50%;
+  right: 10;
+}
+.slick-arrow {
   font-size: 0;
   width: 27px;
   height: 16px;
@@ -111,12 +120,12 @@
   border: none;
   background-color: transparent;
 }
-/* Стрелка влево */
+
 .slick-btn-prev {
   left: 0;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M26 7C26.5523 7 27 7.44772 27 8C27 8.55228 26.5523 9 26 9V7ZM0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM26 9H1V7H26V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
 }
-/* Стрелка вправо */
+
 .slick-arrow.slick-btn-next {
   right: 0;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
@@ -138,8 +147,11 @@
   }
 
   &.slick-current {
-    outline: 1px solid red;
-    border-radius: 50%;
+    picture {
+      display: inline-block;
+      outline: 1px solid $accent-color;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -153,69 +165,6 @@
     border-radius: 50%;
   }
 }
-/* .reviews__frame .reviews__img:nth-child(1) button {
-  background-image: url(../images/reviews/reviews-person1.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person1@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(2) button {
-  background-image: url(../images/reviews/reviews-person2.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person2@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(3) button {
-  background-image: url(../images/reviews/reviews-person3.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person3@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(4) button {
-  background-image: url(../images/reviews/reviews-person4.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person4@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(5) button {
-  background-image: url(../images/reviews/reviews-person5.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person5@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(6) button {
-  background-image: url(../images/reviews/reviews-person6.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person6@2x.jpg);
-  }
-}
-.reviews__frame .reviews__img:nth-child(7) button {
-  background-image: url(../images/reviews/reviews-person7.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/reviews-person7@2x.jpg);
-  }
-} */
 
 @include mq(mob-only) {
   .reviews__avatar {
@@ -332,17 +281,6 @@
   .reviews .reviews__title {
     font-size: 46px;
     margin-bottom: 50px;
-  }
-
-  .reviews__list {
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-
-    max-width: 1090px;
-    margin: 0 auto 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    padding-right: 115px;
   }
 
   .reviews__left {

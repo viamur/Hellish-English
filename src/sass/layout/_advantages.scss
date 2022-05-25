@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    animation-name: delay;
+    animation-duration: 1.5s;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -81,6 +83,7 @@
   height: 60px;
   background-image: url('/images/advantages/icon-tab-mob-image1.svg');
   background-size: cover;
+  animation: rotate 1500ms 0s linear;
 
   @include mq(desk) {
     width: 100px;
@@ -94,6 +97,7 @@
   height: 60px;
   background-image: url('/images/advantages/icon-tab-mob-image2.svg');
   background-size: cover;
+  animation: rotate 1500ms 0s linear;
 
   @include mq(desk) {
     width: 100px;
@@ -107,9 +111,20 @@
   height: 60px;
   background-image: url('/images/advantages/icon-tab-mob-image3.svg');
   background-size: cover;
+  animation: rotate 1500ms 0s linear;
 
   @include mq(desk) {
     width: 100px;
     height: 100px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(360deg);
   }
 }
