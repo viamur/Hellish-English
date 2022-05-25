@@ -111,13 +111,11 @@
 
   z-index: 10;
 
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 
   background-color: rgba(17, 21, 24, 0.9);
-
-  transform: opacity $transition;
+  transition: opacity $transition;
 
   /*  mobilka */
   /* padding: 30px 20px 20px 20px; */
@@ -206,7 +204,7 @@
 
 .navigation__menu-container.is-open {
   opacity: 1;
-  visibility: visible;
+
   pointer-events: all;
 }
 
