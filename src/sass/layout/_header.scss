@@ -1,0 +1,223 @@
+.header {
+  &__section {
+    padding: 30px 0;
+    @include mq(tab-only) {
+      padding: 40px 0;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 128px;
+    height: 45px;
+    @include mq(mob-only) {
+      width: 80px;
+      height: 30px;
+    }
+  }
+
+  &__button {
+    @include button(336px, 70px, $accent-color, transparent);
+    @include mq(tab-only) {
+      margin-right: 40px;
+      margin-left: auto;
+      @include button(260px, 48px, $accent-color, transparent);
+    }
+    @include mq(mob-only) {
+      display: none;
+    }
+    transition: background-color $transition, color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $main-white-color;
+    }
+  }
+}
+
+.logo__img {
+  display: block;
+}
+
+.navigation {
+  display: none;
+  margin-right: 65px;
+  margin-left: auto;
+  @include mq(desk) {
+    display: block;
+  }
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.menu-button {
+  z-index: 20;
+  display: none;
+  width: 30px;
+  height: 30px;
+  @include mq(tab-only) {
+    width: 45px;
+    height: 45px;
+  }
+  @include mq(no-desk) {
+    display: block;
+  }
+  &--burger {
+    z-index: 20;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  padding-top: 30px;
+
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10;
+
+  opacity: 0;
+  pointer-events: none;
+
+  background-color: rgba(17, 21, 24, 0.9);
+  transition: opacity $transition;
+
+  /*  mobilka */
+  /* padding: 30px 20px 20px 20px; */
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    width: 128px;
+    height: 45px;
+    @include mq(mob-only) {
+      width: 80px;
+      height: 30px;
+    }
+  }
+
+  @include mq(desk) {
+    display: none;
+  }
+
+  @include mq(tab-only) {
+    display: flex;
+
+    padding-top: 40px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tab-only) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+
+    color: $main-white-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    @include button(260px, 48px, $accent-color, transparent);
+    margin: 0 auto;
+    padding: 14px 0;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    @include mq(tab-only) {
+      display: none;
+    }
+
+    transition: background-color $transition, color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $main-white-color;
+    }
+  }
+}
+
+.icon {
+  display: block;
+}
+
+.navigation__menu-container.is-open {
+  opacity: 1;
+
+  pointer-events: all;
+}
+
+.box-menu {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+
+  @include mq(mob-only) {
+    padding: 0 20px;
+  }
+  @include mq(tab-only) {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
