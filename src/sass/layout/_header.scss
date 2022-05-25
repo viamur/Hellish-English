@@ -238,7 +238,7 @@
 
 .navigation__menu-container.is-open {
   opacity: 1;
-
+  overflow: hidden;
   pointer-events: all;
 }
 
