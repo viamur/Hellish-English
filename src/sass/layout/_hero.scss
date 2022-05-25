@@ -17,14 +17,14 @@
   }
 
   &__inner {
-    width: 320px;
+    max-width: 320px;
     margin-bottom: 50px;
     @include mq(tab) {
       margin-bottom: 45px;
       padding-left: 2px;
     }
     @include mq(desk) {
-      width: 530px;
+      min-width: 530px;
     }
   }
   &__title {
