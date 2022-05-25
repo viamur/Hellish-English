@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    animation-name: delay;
+    animation-duration: 1.5s;
 
     &:not(:last-child) {
       margin-bottom: 30px;
