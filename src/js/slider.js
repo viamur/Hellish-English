@@ -15,13 +15,16 @@ $('.slider-nav').slick({
   dots: false,
   arrows: false,
   mobileFirst: true,
-  infinite: false,
+  infinite: true,
+  centerMode: true,
+  centerPadding: 0,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 767,
       settings: {
         slidesToShow: 7,
-        slidesToScroll: 7,
+        slidesToScroll: 1,
       },
     },
   ],
