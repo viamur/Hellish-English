@@ -100,13 +100,14 @@
     &:focus .features__icon {
       fill: $main-white-color;
     }
-    &:hover .features__space,
-    &:focus .features__space {
-      color: $main-white-color;
-    }
+
     &:hover .features__subject,
     &:focus .features__subject {
       color: $main-white-color;
+    }
+    &:hover .features__subject:after,
+    &:focus .features__subject:after {
+      background-color: $main-white-color;
     }
     &:hover .features__subtitle,
     &:focus .features__subtitle {
@@ -125,7 +126,6 @@
   }
 
   &__subject {
-    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.43;
@@ -135,37 +135,42 @@
     transition: color 250ms var(--timing-function);
 
     @include mq(desk) {
-      margin-bottom: 15px;
       font-size: 20px;
       line-height: 1.4;
     }
-  }
+    &:after {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      margin: 20px auto;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      background-color: $accent-color;
 
-  &__space {
-    margin-bottom: 20px;
+      @include mq(desk) {
+        margin: 15px auto;
+      }
+    }
 
-    transition: color 250ms var(--timing-function);
+    &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.08em;
+      color: $secondary-text-color;
 
-    @include mq(desk) {
-      margin-bottom: 15px;
+      transition: color 250ms var(--timing-function);
+
+      @include mq(tab) {
+        font-size: 18px;
+        line-height: 1.56;
+      }
     }
   }
-
-  &__subtitle {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.08em;
-    color: $secondary-text-color;
-
-    transition: color 250ms var(--timing-function);
-
-    @include mq(tab) {
-      font-size: 18px;
-      line-height: 1.56;
-    }
+  .row-br {
+    display: block;
   }
-}
-.row-br {
-  display: block;
 }
