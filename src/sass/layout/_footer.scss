@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
+  // text-align: center;
   padding-top: 24px;
   padding-bottom: 30px;
 
@@ -20,7 +20,9 @@
   }
 }
 .footer__logo {
-  margin-right: 290px;
+  @include mq(desk) {
+    margin-right: 290px;
+  }
 }
 .logo__icon {
   display: block;
@@ -81,7 +83,7 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin-right: auto;
+  // margin-right: auto;
 
   background-image: url(../images/footer/instagram.svg);
   background-repeat: no-repeat;
@@ -89,11 +91,17 @@
 
   @include mq(tab) {
     &::before {
-      top: 0;
-      left: -24px;
+      content: '';
+      display: block;
+      // border: 1px solid #ff6b09;
       width: 1px;
       height: 40px;
-      background-color: $secondary-text-color;
+      background-color: #ff6b09;
+      margin-right: 25px;
+      // top: 0;
+      // left: -24px;
+      // width: 1px;
+      // height: 40px;
     }
   }
 }
