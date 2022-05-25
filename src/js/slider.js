@@ -16,7 +16,7 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
-  centerPadding: '350px',
+  centerPadding: '105',
   infinite: true,
-  variableWidth: false,
+  /* variableWidth: true, */
 });
