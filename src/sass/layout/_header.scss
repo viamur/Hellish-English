@@ -71,14 +71,11 @@
 .menu-button {
   z-index: 20;
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 21px;
+  height: 21px;
   border: none;
   background-color: transparent;
-  @include mq(tab-only) {
-    width: 45px;
-    height: 45px;
-  }
+
   @include mq(no-desk) {
     display: block;
   }
