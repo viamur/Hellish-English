@@ -13,6 +13,44 @@ $card-item: 1;
 $gap-left: 0;
 $gap-top: 30px;
 
+$mobile-320: 320px;
+$mobile-480: 480px;
+$tablet-768: 768px;
+$desktop-1366: 1366px;
+$white-color: #ffffff;
+$black-color: #000000;
+$color-success: #008000;
+$color-warning: #ffa500;
+$color-error: #ff0000;
+$dark-light-color: rgba(33, 33, 33, 0.2);
+$text-primary-color: #b9b9b9;
+$text-second-color: #111518;
+$text-third-color: #3d3d3d;
+$accent-color: #ff6b09;
+$place-holder-color: rgba(117, 117, 117, 0.5);
+$checkbox-border-color: #2a2a2a;
+$bg-main-color: rgba(17, 21, 24, 0.9);
+$bg-second-color: #f1f1f1;
+$bg-third-color: rgba(118, 69, 69, 0);
+$border-form-color: rgba(33, 33, 33, 0.2);
+$shadow-primary-color: rgba(0, 0, 0, 0.04);
+$shadow-second-color: rgba(0, 0, 0, 0.1);
+$shadow-third-color: rgba(0, 0, 0, 0.25);
+$shadow-primary: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$time0: 0ms;
+$time250: 250ms;
+$time500: 500ms;
+$time750: 750ms;
+$time1000: 1000ms;
+$time1250: 1250ms;
+$time1500: 1500ms;
+$time1750: 1750ms;
+$time2000: 2000ms;
+$time2250: 2250ms;
+$time2500: 2500ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
 :root {
   --card-colum: 1;
   --card-item: 1;
