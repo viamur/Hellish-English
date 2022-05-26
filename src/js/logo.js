@@ -1,7 +1,7 @@
 (() => {
     const openBtnRef = document.querySelector("[data-menu-open]");
     const closeBtnRef = document.querySelector("[data-menu-close]");
-    const mobileMenuRef = document.querySelector("[data-logo]");
+
 
     openBtnRef.addEventListener("click", () => {
         const expanded =

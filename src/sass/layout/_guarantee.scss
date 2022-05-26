@@ -1,18 +1,22 @@
 .guarantee {
   padding-top: 70px;
 
+  @include mq(mob-only) {
+    background-image: linear-gradient(to bottom, #ffffff 131px, #f1f1f1 131px, #f1f1f1 425px);
+  }
+
   @include mq(desk) {
     padding-top: 130px;
   }
 }
 
 .guarantee__container {
-  background-color: $supplement-bg-color;
   padding-top: 45px;
   padding-bottom: 45px;
 
   @include mq(tab) {
     padding: 30px 65px;
+    background-color: $supplement-bg-color;
   }
 
   @include mq(desk) {
@@ -23,6 +27,7 @@
 .guarantee__title {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 26px;
 
   @include mq(desk) {
     margin-bottom: 50px;
@@ -48,8 +53,13 @@
     padding-bottom: 18px;
     margin-bottom: 7px;
   }
+
   @include mq(tab) {
-    padding-left: 24;
+    &:not(:last-child) {
+      padding-left: 24;
+      padding-bottom: 13px;
+      margin-bottom: 7px;
+    }
   }
 
   @include mq(desk) {
@@ -65,23 +75,25 @@
 
 .guarantee__item::before {
   content: '';
-  background-image: url(../images/guarantee/svg/campfire.svg);
+  background-image: url(../images/guarantee/svg/campfire-mob-tab.svg);
+  background-color: $supplement-bg-color;
   position: absolute;
   width: 15px;
-
-  height: 20px;
+  height: 24px;
   background-size: contain;
+  background-repeat: no-repeat;
 
   left: -8px;
   top: -1px;
   margin-right: 20px;
 
-  @include mq(tab) {
+  @include mq(desk) {
     top: -3px;
-    left: -8px;
+    left: -10px;
+    background-image: url(../images/guarantee/svg/campfire-desk.svg);
+    width: 20px;
+    height: 34px;
   }
-
-  //   outline: 1px solid black;
 }
 
 .guarantee__accent {

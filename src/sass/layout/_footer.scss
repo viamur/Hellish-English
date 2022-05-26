@@ -34,7 +34,7 @@
 .footer-tel {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -70,6 +70,12 @@
 }
 
 .footer__icon {
+  @include mq(mob) {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
   @include mq(tab) {
     margin-right: 39px;
     width: 24px;
