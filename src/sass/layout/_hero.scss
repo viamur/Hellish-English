@@ -1,0 +1,124 @@
+.hero {
+  padding-bottom: 232px;
+
+  background-image: url(../images/hero/mob/mob-image-1x.png);
+  background-size: 208px 178px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @include mq(retina) {
+    background-image: url(../images/hero/mob/mob-image-2x.png);
+  }
+  @include mq(tab) {
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    background-image: url(../images/hero/tab/tab-image-1x.png);
+    background-size: 370px 315px;
+    background-position: calc(50% + 188px) 30px;
+    @include mq(retina) {
+      background-image: url(../images/hero/tab/tab-image-2x.png);
+    }
+  }
+  @include mq(desk) {
+    padding-top: 55px;
+    padding-bottom: 241px;
+
+    background-image: url(../images/hero/desk/desk-image-1x.png);
+    background-size: 842px 718px;
+    background-position: calc(50% + 355px) 0;
+    @include mq(retina) {
+      background-image: url(../images/hero/desk/desk-image-2x.png);
+    }
+  }
+  &__inner {
+    max-width: 320px;
+    margin-bottom: 50px;
+    @include mq(tab) {
+      padding-left: 2px;
+      margin-bottom: 45px;
+    }
+    @include mq(desk) {
+      min-width: 530px;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+    @include mq(tab) {
+      margin-bottom: 15px;
+    }
+    @include mq(desk) {
+      font-size: 58px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+
+    @include mq(desk) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &--grey {
+      font-weight: 500;
+      color: $secondary-text-color;
+    }
+
+    &--nowrap {
+      color: $main-text-accent-color;
+
+      white-space: nowrap;
+    }
+
+    &--accent {
+      color: $accent-color;
+
+      white-space: nowrap;
+      @include mq(desk) {
+        white-space: wrap;
+        color: $main-text-accent-color;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 260px;
+    height: 48px;
+    padding: 10px;
+    margin: 0 auto;
+
+    color: $main-white-color;
+    background-color: $accent-color;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    outline-color: transparent;
+
+    transition: all 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+    @include mq(tab) {
+      margin: 0;
+    }
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.14em;
+
+      width: 354px;
+      height: 70px;
+    }
+  }
+}

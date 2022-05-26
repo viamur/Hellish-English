@@ -1,0 +1,93 @@
+<header class="header section header__section">
+  <div class="container header__container">
+    <a href="./index.html" class="logo header__logo"
+      ><svg class="icon-logo">
+        <use
+          class="icon-logo__fire--gold"
+          href="./images/sprite/sprite.svg#icon-logo__fire--gold"
+        ></use>
+        <use class="icon-logo__fire" href="./images/sprite/sprite.svg#icon-logo__fire"></use>
+        <use
+          class="icon-logo__txt-accent"
+          href="./images/sprite/sprite.svg#icon-logo__txt-accent"
+        ></use>
+        <use
+          class="icon-logo__txt-revers"
+          href="./images/sprite/sprite.svg#icon-logo__txt-revers"
+          data-logo
+        ></use></svg
+    ></a>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#program" class="navigation__link js-scroll">Studying program</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link js-scroll">About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#features" class="navigation__link js-scroll">Training options</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts " class="navigation__link js-scroll">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="button header__button" data-modal-open>
+      Consultation by phone
+    </button>
+
+    <button
+      type="button"
+      class="menu-button"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-modal-open
+    >
+      <div class="burger">
+        <div class="burger__line burger__line--first"></div>
+        <div class="burger__line burger__line--second"></div>
+        <div class="burger__line burger__line--third"></div>
+        <div class="burger__line burger__line--fourth"></div>
+      </div>
+    </button>
+
+    <div class="menu-container navigation__menu-container" data-menu>
+      <div class="box-menu">
+        <div class="menu-container__top">
+          <!-- <button
+          type="button"
+          class="menu-button menu-button--cross"
+          aria-expanded="true"
+          aria-controls="menu-container"
+          data-menu-close
+        >
+          <svg class="icon" width="15" height="15" aria-label="Переключатель мобильного меню">
+            Временно подключенные иконки
+            <use class="icon-cross" href="./images/header/mob/mob-cross.svg"></use>
+          </svg>
+        </button> -->
+        </div>
+
+        <ul class="menu-container__list">
+          <li class="menu-container__item">
+            <a href="#program" class="menu-container__link js-scroll">Studying program</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#about" class="menu-container__link js-scroll">About</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#features" class="menu-container__link js-scroll">Training options</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#contacts" class="menu-container__link js-scroll">Contacts</a>
+          </li>
+        </ul>
+
+        <button type="button" class="button menu-container__button">Consultation by phone</button>
+      </div>
+    </div>
+  </div>
+</header>

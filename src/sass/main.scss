@@ -8,7 +8,11 @@
 @import './base/section';
 @import './base/hidden';
 @import './components/logo';
+@import './components/modal-backdrop';
+@import './components/modal-form';
 @import './layout/header';
+@import './components/menu-btn-burger';
+@import './components/menu.scss';
 @import './layout/hero';
 @import './layout/advantages';
 @import './layout/problems';
@@ -20,3 +24,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './components/back-to-top';
