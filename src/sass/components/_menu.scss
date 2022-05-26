@@ -112,6 +112,7 @@
 
   @include mq(mob-only) {
     padding: 0 20px;
+    padding-top: 54px;
   }
   @include mq(tab-only) {
     width: 768px;
