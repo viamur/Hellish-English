@@ -1,94 +1,31 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <form class="form" autocomplete="off">
-      <p class="form__description">Leave your details, we will call you back</p>
-      <label class="form__field">
-        <input
-          class="form__input"
-          type="text"
-          name="name"
-          placeholder="Anatoliy"
-          title="Please enter your first name"
-          minlength="2"
-          maxlength="30"
-          required
-        /><span class="form__label">Name</span>
-        <svg class="form__icon" width="18" height="18">
-          <use href="/images/sprite/sprite.svg#icon-person-black"></use>
-        </svg>
+    <button type="button" class="modal__btn" data-modal-close>х</button>
+    <p class="modal__title">leave your phone, we will call you back</p>
+    <form class="modal-form" name="modal_form">
+      <label class="modal-form__label">
+        <span class="modal-form__title">Name</span>
+        <span class="modal-form__block">
+          <input type="text" name="modal_name" class="modal-form__input">
+          <svg width="18" height="18" class="modal-form__icon">
+            <use href="/images/sprite/sprite.svg#icon-person-black" />
+          </svg>
+        </span>
       </label>
-      <label class="form__field">
-        <input
-          class="form__input"
-          type="tel"
-          name="tel"
-          placeholder="+38 000 111 22 33"
-          title="Please enter your phone number in the format +380111222333 or 08011223344"
-          minlength="9"
-          maxlength="13"
-          required
-        /><span class="form__label">Telephone</span>
-        <svg class="form__icon" width="18" height="18">
-          <use href="/images/sprite/sprite.svg#icon-phone-black"></use>
-        </svg>
+      <label class="modal-form__label">
+        <span class="modal-form__title">Phone</span>
+        <span class="modal-form__block">
+          <input type="tel" name="modal_number" class="modal-form__input">
+          <svg width="18" height="18" class="modal-form__icon">
+            <use href="/images/sprite/sprite.svg#icon-phone-black" />
+          </svg>
+        </span>
       </label>
-      <label class="form__field">
-        <input
-          class="form__input"
-          type="email"
-          name="email"
-          placeholder="example@mail.com"
-          title="Please enter your mailbox"
-          required
-        /><span class="form__label">Mailbox</span>
-        <svg class="form__icon" width="18" height="18">
-          <use href="/images/sprite/sprite.svg#icon-email-black"></use>
-        </svg>
+      <label class="modal-form__check">
+        <input type="checkbox" name="checkbox" class="modal-form__checkbox" required>
+        <span class="modal-form__text">I agree with the newsletter and accept <a href="" class="modal-form__link"
+            rel="noreferrer noopener nofollow">Terms of an agreement</a></span>
       </label>
-      <label class="form__field">
-        <textarea
-          class="form__comment"
-          name="textarea"
-          rows="8"
-          placeholder="Enter text"
-          title="Here you can write your comment"
-          maxlength="300"
-        ></textarea
-        ><span class="form__label-comment">Comment</span>
-      </label>
-      <label class="form__policy">
-        <input
-          class="form__checkbox"
-          type="checkbox"
-          name="policy"
-          value="accept policy"
-          required
-        />
-        <span class="form__icon-checkbox"></span>
-        <span class="form__checkbox-policy"
-          >I agree with the newsletter and accept
-          <a class="form__checkbox-link" href="./index.html">Agreement conditions</a></span
-        >
-      </label>
-      <div class="button-submit">
-        <button
-          class="button button-submit__submit-button button-animation"
-          type="submit"
-          aria-label="Submit the inputed form"
-        >
-          Send
-        </button>
-      </div>
-      <button
-        class="modal-close"
-        type="button"
-        aria-label="Close subscription menu"
-        data-modal-close
-      >
-        <svg class="modal-close__icon" width="18" height="18">
-          <use href="/images/sprite/sprite.svg#icon-close_40px"></use>
-        </svg>
-      </button>
+      <button type="submit" class="modal__button">Send</button>
     </form>
   </div>
-</div>
