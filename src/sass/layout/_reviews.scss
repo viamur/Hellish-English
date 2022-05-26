@@ -177,6 +177,10 @@
 }
 
 @include mq(tab) {
+  .reviews {
+    padding-bottom: 70px;
+  }
+
   .reviews__item {
     display: flex;
   }

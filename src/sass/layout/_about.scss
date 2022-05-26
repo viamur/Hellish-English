@@ -1,6 +1,4 @@
 .about {
-  padding-top: 70px;
-
   @include mq(desk) {
     padding-top: 0;
   }
@@ -83,12 +81,8 @@
   @include mq(tab) {
     font-size: 12px;
     line-height: 1.25;
-  }
-  @include mq(tab) {
-    font-size: 16px;
-    line-height: 1.25;
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
