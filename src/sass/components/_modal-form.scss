@@ -10,18 +10,18 @@
   align-items: center;
   padding: 40px;
   margin: 0 auto;
-  background-color: $bg-second-color;
+  background-color: $supplement-bg-color;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time250 $cubic;
-  @media screen and (max-width: 767px) {
+  @include mq(tab) {
     width: calc(100% - 2 * 15px);
   }
-  @media screen and (min-width: $tablet-768) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc(100% - 2 * 159px);
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  @media screen and (min-width: $desktop-1366) {
+  @include mq(desk) {
     top: 50%;
     left: 50%;
 
@@ -45,11 +45,11 @@
   line-height: 1.5;
   text-align: center;
   color: $accent-color;
-  @media screen and (min-width: $mobile-480) {
+  @include mq(mob) {
     padding-left: 70px;
     padding-right: 70px;
   }
-  @media screen and (min-width: $desktop-1366) {
+  @include mq(desk) {
     line-height: 1.15;
   }
 }
@@ -59,7 +59,7 @@
   width: 100%;
   &:not(:last-child) {
     margin-bottom: 28px;
-    @media screen and (min-width: $tablet-768) {
+    @include mq(tab) {
       &:not(:last-child) {
         margin-bottom: 20px;
       }
@@ -78,7 +78,7 @@
   box-shadow: 0px 4px 4px $shadow-third-color;
   transition: border $time250 $cubic;
   outline: none;
-  @media screen and (min-width: $mobile-480) {
+  @include mq(mob) {
     padding: 12px 12px 12px 42px;
   }
   .form__field:focus-within > & {
@@ -89,7 +89,7 @@
     transition: color $time250 $cubic;
   }
   .form__field:focus-within &::placeholder {
-    color: $place-holder-color;
+    color: rgba(117, 117, 117, 0.5);
   }
   &:not(:placeholder-shown):required:valid {
     border: 1px solid $color-success;
@@ -108,7 +108,7 @@
   color: $text-primary-color;
   transform: translate(0, -50%);
   transition: transform $time250 linear, color $time250 $cubic;
-  @media screen and (min-width: $mobile-480) {
+  @include mq(tab) {
     left: 9%;
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
@@ -122,13 +122,13 @@
       transform: translateY(-35px) translateX(-33px);
     }
   }
-  @media screen and (max-width: 677px) {
+  @include mq(tab) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
       transform: translateY(-40px) translateX(-33px);
     }
   }
-  @media screen and (max-width: 479px) {
+  @include mq(mob) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
       transform: translateY(-35px) translateX(-25px);
@@ -151,7 +151,7 @@
     border-color: $accent-color;
   }
   &::placeholder {
-    color: $place-holder-color;
+    color: rgba(117, 117, 117, 0.5);
   }
 }
 .form__label-comment {
@@ -167,7 +167,7 @@
   .form__input:not(:placeholder-shown) + & {
     color: $accent-color;
   }
-  @media screen and (min-width: $mobile-480) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
       transform: translateX(240%);
@@ -210,17 +210,18 @@
     background-image: url(../images/sprite/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
+    background-repeat: no-repeat;
   }
-  .form__checkbox:focus + & {
+  /*  .form__checkbox:focus + & {
     border-color: $color-success;
-  }
+  } */
 }
 .form__checkbox-policy {
   display: inline-grid;
   font-size: 12px;
   line-height: 1.166;
-  color: $text-primary-color;
-  @media screen and (min-width: $desktop-1366) {
+  color: $secondary-text-color;
+  @include mq(desk) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -249,7 +250,7 @@
   justify-content: center;
   & .button-submit__submit-button {
     padding: 15px 100px 15px 100px;
-    box-shadow: 0px 4px 4px $shadow-third-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .modal-close {
@@ -261,9 +262,9 @@
   right: 2%;
   width: 30px;
   height: 30px;
-  background-color: $white-color;
+  background-color: $main-white-color;
   border-radius: 50%;
-  border: 1px solid $shadow-second-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transform: rotateZ(0deg);
   transition: transform $time1000 $cubic, color $time250 $cubic $time500;
@@ -273,7 +274,7 @@
     color: $accent-color;
   }
   &:active {
-    box-shadow: 0px 7px 2px 4px $shadow-primary-color;
+    box-shadow: 0px 7px 2px 4px rgba(0, 0, 0, 0.04);
     transform: translateY(4px);
   }
 }
