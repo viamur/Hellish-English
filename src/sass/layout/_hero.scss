@@ -14,7 +14,7 @@
 
     background-image: url(../images/hero/tab/tab-image-1x.png);
     background-size: 370px 315px;
-    background-position: calc(50% + 188px) 0;
+    background-position: calc(50% + 188px) 30px;
     @include mq(retina) {
       background-image: url(../images/hero/tab/tab-image-2x.png);
     }
