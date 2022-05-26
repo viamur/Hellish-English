@@ -1,0 +1,46 @@
+.burger {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+
+  &__line {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $main-text-accent-color;
+    transition: all $transition;
+
+    &--first {
+      top: 25%;
+    }
+
+    &--second,
+    &--third {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--fourth {
+      bottom: 25%;
+    }
+  }
+}
+
+.burger--active .burger__line {
+  background-color: $main-white-color;
+  border-radius: 2px;
+
+  &--first,
+  &--fourth {
+    opacity: 0;
+  }
+  &--second {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  &--third {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
