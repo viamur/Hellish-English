@@ -106,6 +106,9 @@
     background-color: transparent;
     border: 2px solid $main-white-color;
     outline: none;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     &:not(:placeholder-shown):required:invalid {
       border-color: red;
@@ -137,7 +140,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
-    margin-top: 30px;
+    margin-top: 50px;
     transition: var(--timing-function), box-shadow var(--timing-function);
     transition-duration: 250ms;
     &:focus,
@@ -151,13 +154,13 @@
     @include mq(tab) {
       width: 260px;
       height: 48px;
-      margin-top: 10px;
+      margin-top: 30px;
     }
 
     @include mq(desk) {
       width: 354px;
       height: 70px;
-      margin-top: 50px;
+      margin-top: 80px;
     }
   }
 }
