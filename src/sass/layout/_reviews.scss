@@ -49,7 +49,6 @@
 }
 
 .reviews__text {
-  margin-bottom: 72px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -218,7 +217,7 @@
     text-align: left;
   }
   .reviews__text {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     font-size: 12px;
     line-height: 1.67;
   }
@@ -243,8 +242,8 @@
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
   }
   .reviews {
-    padding-top: 70px;
-    padding-bottom: 0;
+    padding-top: 130px;
+    padding-bottom: 130px;
   }
   .reviews .reviews__title {
     font-size: 46px;
@@ -254,7 +253,7 @@
   .reviews__list {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     max-width: 1090px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 82px;
@@ -280,9 +279,12 @@
   }
 
   .reviews__text {
-    margin-bottom: 118px;
+    /* margin-bottom: 118px; */
     font-size: 18px;
     line-height: 1.56;
+  }
+  .slick-list {
+    margin-bottom: 40px;
   }
 }
 
