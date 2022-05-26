@@ -18,13 +18,16 @@
   }
 }
 .footer__logo {
+  margin-bottom: 22px;
+  @include mq(tab) {
+    margin-bottom: 0;
+  }
   @include mq(desk) {
     margin-right: 290px;
   }
 }
 .logo__icon {
   display: block;
-  margin-bottom: 22px;
 
   @include mq(tab) {
     margin-bottom: 0;
