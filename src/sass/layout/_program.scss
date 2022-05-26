@@ -2,8 +2,6 @@
   padding-top: 50px;
   padding-bottom: 70px;
   background-color: $main-text-accent-color;
-  // position: relative;
-  // overflow: hidden;
   @include mq(mob) {
     position: relative;
   }
@@ -66,6 +64,8 @@
       display: flex;
       padding-left: 0;
       position: relative;
+
+      padding-top: 48px;
     }
     @media screen and (min-width: 1641px) {
       position: static;
@@ -133,9 +133,6 @@
     }
     @include mq(desk) {
       top: 0;
-    }
-    @include mq(desk) {
-      top: 48px;
     }
   }
   &__sublist {
@@ -266,8 +263,8 @@
     left: -7px;
     top: -1px;
     @include mq(desk) {
-      left: -3px;
-      top: -7px;
+      left: 0px;
+      top: -55px;
       width: 16px;
       height: 16px;
     }
@@ -283,8 +280,8 @@
     left: -4px;
     top: -1px;
     @include mq(desk) {
-      left: -2px;
-      top: -7px;
+      left: 0px;
+      top: -54px;
       width: 16px;
       height: 16px;
     }
