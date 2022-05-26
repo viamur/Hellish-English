@@ -34,6 +34,9 @@
 
     max-width: 450px;
     margin-bottom: 25px;
+    &--nowrap {
+      white-space: nowrap;
+    }
     @include mq(tab) {
       margin-bottom: 30px;
     }
