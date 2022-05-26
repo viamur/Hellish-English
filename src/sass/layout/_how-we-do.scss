@@ -167,8 +167,8 @@
     transition: color 250ms var(--timing-function);
 
     @include mq(tab) {
-      font-size: 18px;
-      line-height: 1.56;
+      font-size: 12px;
+      line-height: 1.67;
     }
   }
   .row-br {

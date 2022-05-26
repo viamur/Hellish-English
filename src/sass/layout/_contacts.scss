@@ -33,7 +33,7 @@
   @include mq(desk) {
     padding-top: 100px;
     padding-bottom: 62px;
-    max-width: 1680px;
+
     background-image: url('/images/contacts/desk/desk-image-1x.png');
 
     @include mq(retina) {
