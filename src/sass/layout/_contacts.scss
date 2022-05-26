@@ -17,7 +17,8 @@
     color: $accent-color;
   }
   @include mq(tab) {
-    max-width: 768px;
+    padding-bottom: 68px;
+    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -48,6 +49,7 @@
     margin-bottom: 25px;
 
     @include mq(tab) {
+      margin-bottom: 50px;
       font-size: 26px;
       line-height: 1.3;
     }
@@ -68,6 +70,7 @@
     color: $main-white-color;
 
     @include mq(tab) {
+      margin-bottom: 40px;
       font-weight: 600;
       font-size: 16px;
     }
@@ -139,12 +142,14 @@
     }
 
     @include mq(tab) {
-      width: 354px;
-      height: 70px;
+      width: 260px;
+      height: 48px;
       margin-top: 10px;
     }
 
     @include mq(desk) {
+      width: 354px;
+      height: 70px;
       margin-top: 50px;
     }
   }

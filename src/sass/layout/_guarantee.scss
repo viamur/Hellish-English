@@ -45,7 +45,7 @@
   }
 
   &:not(:last-child) {
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     margin-bottom: 7px;
   }
   @include mq(tab) {
