@@ -20,7 +20,6 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
     text-align: center;
 
     background-image: url('/images/contacts/tab/tab-image-1x.png');
@@ -31,8 +30,9 @@
   }
 
   @include mq(desk) {
+    padding-top: 100px;
+    padding-bottom: 62px;
     max-width: 1680px;
-    margin-top: 100px;
     background-image: url('/images/contacts/desk/desk-image-1x.png');
 
     @include mq(retina) {
