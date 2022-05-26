@@ -1,7 +1,8 @@
 .features {
+  padding-bottom: 40px;
+
   @include mq(mob) {
     padding-top: 70px;
-    padding-bottom: 40px;
   }
 
   @include mq(tab) {

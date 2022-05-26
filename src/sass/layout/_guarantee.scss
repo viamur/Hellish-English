@@ -23,6 +23,7 @@
 .guarantee__title {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 26px;
 
   @include mq(desk) {
     margin-bottom: 50px;
@@ -45,11 +46,16 @@
   }
 
   &:not(:last-child) {
-    padding-bottom: 13px;
+    padding-bottom: 18px;
     margin-bottom: 7px;
   }
+
   @include mq(tab) {
-    padding-left: 24;
+    &:not(:last-child) {
+      padding-left: 24;
+      padding-bottom: 13px;
+      margin-bottom: 7px;
+    }
   }
 
   @include mq(desk) {

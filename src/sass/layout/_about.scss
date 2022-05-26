@@ -75,6 +75,9 @@
   letter-spacing: 0.06em;
 
   &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  &:last-of-type {
     margin-bottom: 20px;
   }
 
@@ -93,6 +96,7 @@
   height: 14px;
   background-size: contain;
   margin-right: 9px;
+  background-repeat: no-repeat;
   background-image: url(../images/about/svg/about_checkbox.svg);
 
   @include mq(desk) {
@@ -126,10 +130,7 @@
   line-height: 1.6;
   color: $secondary-text-color;
   text-decoration: none;
-
-  &:not(:last-child) {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 30px;
 
   @include mq(tab) {
     font-size: 10px;
