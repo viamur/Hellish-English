@@ -1,0 +1,36 @@
+<div class="backdrop is-hidden" data-modal-menu>
+  <div class="modal">
+    <button type="button" class="modal__btn" data-modal-menu-close>х</button>
+    <p class="modal__title">leave your phone, we will call you back</p>
+    <form class="modal-form" name="modal_form">
+      <label class="modal-form__label">
+        <span class="modal-form__title">Name</span>
+        <span class="modal-form__block">
+          <input type="text" name="modal_name" class="modal-form__input" />
+          <svg width="18" height="18" class="modal-form__icon">
+            <use href="/images/sprite/sprite.svg#icon-person-black" />
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__label">
+        <span class="modal-form__title">Phone</span>
+        <span class="modal-form__block">
+          <input type="tel" name="modal_number" class="modal-form__input" />
+          <svg width="18" height="18" class="modal-form__icon">
+            <use href="/images/sprite/sprite.svg#icon-phone-black" />
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__check">
+        <input type="checkbox" name="checkbox" class="modal-form__checkbox" required />
+        <span class="modal-form__text"
+          >I agree with the newsletter and accept
+          <a href="" class="modal-form__link" rel="noreferrer noopener nofollow"
+            >Terms of an agreement</a
+          ></span
+        >
+      </label>
+      <button type="submit" class="modal__button">Send</button>
+    </form>
+  </div>
+</div>
