@@ -15,25 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 69px;
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     @include mq(tab) {
+      width: calc(100% - (2 * 21px) / 3);
+      margin-bottom: 0;
+      justify-content: start;
       &:not(:last-child) {
-        margin-bottom: 0px;
-      }
-      &:nth-child(n + 2) {
-        max-width: 186px;
+        margin-right: 21px;
       }
     }
 
     @include mq(desk) {
-      max-width: 366px;
-      &:nth-child(n + 2) {
-        max-width: 366px;
+      width: calc(100% - (2 * 31px) / 3);
+      &:not(:last-child) {
+        margin-right: 31px;
       }
     }
   }
@@ -49,20 +46,35 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.64;
-    display: flex;
     letter-spacing: 0.08em;
     position: relative;
-    max-width: 224px;
-    padding: 0px 9px 0px 69px;
+    left: 7px;
+    max-width: 146px;
     animation: rotate 2000ms 0s linear;
-
-    &:not(:last-child) {
-      padding: 8px 9px 8px 69px;
+    .advantages__list-item:nth-child(3) & {
+      // max-width: 105px;
     }
-
+    .advantages__list-item:nth-child(2) & {
+      @include mq(tab) {
+        max-width: 105px;
+      }
+    }
+    @include mq(tab) {
+      max-width: 146px;
+      left: 10px;
+    }
     @include mq(desk) {
       font-size: 20px;
-      max-width: 320px;
+      max-width: 240px;
+      left: -10px;
+    }
+    &--nowrap1 {
+      @include mq(desk) {
+        white-space: nowrap;
+      }
+    }
+    &--nowrap2 {
+      white-space: nowrap;
     }
   }
 
@@ -73,58 +85,30 @@
     position: absolute;
   }
 }
-
-.image1-icon::after {
+.advantages__list-item::before {
   content: '';
   width: 60px;
   height: 60px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mq(desk) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+}
+.advantages__list-item:nth-child(1)::before {
   background-image: url('/images/advantages/icon-tab-mob-image1.svg');
-  background-size: cover;
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin-right: auto;
-
-  @include mq(desk) {
-    width: 100px;
-    height: 100px;
-  }
 }
 
-.image2-icon::after {
-  content: '';
-  width: 60px;
-  height: 60px;
+.advantages__list-item:nth-child(2)::before {
   background-image: url('/images/advantages/icon-tab-mob-image2.svg');
-  background-size: cover;
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  @include mq(desk) {
-    width: 100px;
-    height: 100px;
-  }
 }
 
-.image3-icon::after {
-  content: '';
-  width: 60px;
-  height: 60px;
+.advantages__list-item:nth-child(3)::before {
   background-image: url('/images/advantages/icon-tab-mob-image3.svg');
-  background-size: cover;
-
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  @include mq(desk) {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 @keyframes rotate {
