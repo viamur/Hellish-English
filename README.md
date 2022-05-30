@@ -1,3 +1,4 @@
+
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -9,16 +10,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="OURTEAM.files/filelist.xml">
+<link rel=File-List href="OUR%20TEAM2.files/filelist.xml">
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Масакари</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Масакари</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>61</o:TotalTime>
-  <o:Created>2022-05-30T13:33:00Z</o:Created>
-  <o:LastSaved>2022-05-30T14:34:00Z</o:LastSaved>
+  <o:TotalTime>64</o:TotalTime>
+  <o:Created>2022-05-30T14:37:00Z</o:Created>
+  <o:LastSaved>2022-05-30T14:37:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>100</o:Words>
   <o:Characters>574</o:Characters>
@@ -31,8 +32,8 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="OURTEAM.files/themedata.thmx">
-<link rel=colorSchemeMapping href="OURTEAM.files/colorschememapping.xml">
+<link rel=themeData href="OUR%20TEAM2.files/themedata.thmx">
+<link rel=colorSchemeMapping href="OUR%20TEAM2.files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:SpellingState>Clean</w:SpellingState>
@@ -1954,7 +1955,7 @@ mso-fareast-language:RU'>:</span></b><span style='font-size:12.0pt;font-family:
 mso-fareast-language:RU'> <span class=SpellE><i style='mso-bidi-font-style:
 normal'>Maksym</i></span><i style='mso-bidi-font-style:normal'> <span
 class=SpellE><span class=GramE>Lizohub</span></span></i><span class=GramE> <span
-style='mso-spacerun:yes'> </span>[</span>&nbsp;https://github.com/Maksym-Lizohub&nbsp;];<o:p></o:p></span></p>
+style='mso-spacerun:yes'> </span>[</span>&nbsp;https://github.com/Maksym-Lizohub&nbsp;];<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-indent:-18.0pt;line-height:15.0pt;mso-outline-level:
@@ -1971,7 +1972,7 @@ color:#24292F;mso-fareast-language:RU'>:</span></b><span style='font-size:12.0pt
 font-family:"Segoe UI",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#24292F;mso-fareast-language:RU'>:</span></span><span style='font-size:
 12.0pt;font-family:"Segoe UI",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#24292F;mso-fareast-language:RU'> <span style='mso-spacerun:yes'> </span></span><span
+color:#24292F;mso-fareast-language:RU'> <span style='mso-spacerun:yes'> </span></span><span
 class=SpellE><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
 font-family:"Segoe UI",sans-serif;color:#24292F'>Serhii</span></i></span><i
 style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;font-family:
@@ -2144,7 +2145,7 @@ font-family:"Segoe UI",sans-serif;color:#24292F;mso-ansi-language:EN-US'>Maksym<
 lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
 color:#24292F;mso-ansi-language:EN-US'> <span class=SpellE><span class=GramE>Lizohub</span></span></span><span
 class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
-color:#24292F'> <span style='mso-spacerun:yes'> </span></span><span
+color:#24292F'> <span style='mso-spacerun:yes'> </span></span><span
 style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;color:#24292F'>|</span></span><span
 style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;color:#24292F'> <span
 class=SpellE>dev</span><o:p></o:p></span></h3>
